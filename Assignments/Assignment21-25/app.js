@@ -1,0 +1,246 @@
+// STRING METHODS
+
+// 1. Write a program that takes two user inputs for first and 
+// last name using prompt and merge them in a new variable 
+// titled fullName. Greet the user using his full name.
+var firstname = prompt("enter your first name")
+var lastname = prompt("enter your last name")
+var fullname = firstname + lastname
+alert("welcome " + fullname)
+
+// 2. Write a program to take a user input about his favorite 
+// mobile phone model. Find and display the length of user 
+// input in your browser
+var favphonemodel = prompt("enter your fav mobile model")
+var length = favphonemodel.length
+document.write(length)
+
+
+// 3. Write a program to find the index of letter “n” in the word
+// “Pakistani” and display the result in your browser .
+
+var arr = "pakistan"
+var arr2 = arr.indexOf("n")
+document.write("</br>" + arr2)
+
+// 4. Write a program to find the last index of letter “l” in the 
+// word “Hello World” and display the result in your browser.
+var arr3 = "Hello World"
+var arr4 = arr3.lastIndexOf("l")
+document.write("</br>" + arr4)
+
+// 5. Write a program to find the character at 3rd index in the 
+// word “Pakistani” and display the result in your browser.
+
+var arr5 = "pakistani";
+var arr6 = word.charAt(3);
+document.write("</br>" + arr6)
+
+
+
+
+
+// 6. Repeat Q1 using string concat() method.
+var Cfirstname = prompt("enter your first name")
+var Clastname = prompt("enter your last name")
+var Cfullname = Cfirstname.concat(Clastname)
+alert("welcome " + Cfullname)
+
+
+
+
+
+// 7. Write a program to replace the “Hyder” to “Islam” in the 
+// word “Hyderabad” and display the result in your browser.
+var arrr = "Hyderabad"
+var arrrr = arrr.replace("Hyder", "Islam")
+document.write("<br>" + arrrr)
+
+// 8. Write a program to replace all occurrences of “and” in the
+// string with “&” and display the result in your browser.
+// var message = “Ali and Sami are best friends. They play cricket and 
+// football together.”;
+var message = "Ali and Sami are best friends. They play cricket and football together";
+message = message.replace(/and/g, "&");
+document.write(message);
+
+
+
+// 9. Write a program that converts a string “472” to a number 
+// 472. Display the values & types in your browser.
+
+var num = "472"
+var strtonum = Number(num)
+console.log(strtonum)
+
+
+
+// 10. Write a program that takes user input. Convert and 
+// show the input in capital letters.
+var userInput = prompt("Enter your name")
+var capitalletters = userInput.toUpperCase()
+alert(capitalletters)
+
+// 11. Write a program that takes user input. Convert and 
+// show the input in title case.
+
+
+// 12. Write a program that converts the variable num to 
+// string.
+// var num = 35.36 ;
+// Remove the dot to display “3536” display in your browser.
+
+var num = 35.36;
+const str = num.toString().replace('.', '');
+console.log(str);
+
+
+
+// 13. Write a program to take user input and store username 
+// in a variable. If the username contains any special symbol 
+// among [@ . , !], prompt the user to enter a valid username. 
+// For character codes of [@ .
+// Note:
+// ASCII code of ! is 33
+// ASCII code of , is 44
+// ASCII code of . is 46
+// ASCII code of @ is 64
+var userInput = prompt("Enter your username");
+if (userInput === '@' || userInput === '!' || userInput === '.' || userInput === ',') {
+    alert("Please! Enter a valid username")
+}
+else {
+    ("username is valid")
+}
+
+
+// 14. You have an array
+// A = [cake”, “apple pie”, “cookie”, “chips”, “patties”]
+// Write a program to enable “search by user input” in an 
+// array. After searching, prompt the user whether the given 
+// item is found in the list or not.
+// Note: Perform case insensitive search. Whether the user 
+// enters cookie, Cookie, COOKIE or coOkIE, program 
+// should inform about its availability. Example:
+
+var item = ["cake", "apple pie", "cookie", "chips", "patties"];
+var userChoose = prompt("plz Enter item");
+userChoose = userChoose.toLowerCase();
+for (i = 0; i < item.length; i++) {
+    if (item[i] === userChoose) {
+        document.write(userChoose + "is available at index" + item.indexOf(userChoose) + "in our bakery" + "<br>");
+    }
+    else {
+        document.write(userChoose + " is not available");
+    }
+}
+
+
+
+// 15. Write a program to take password as an input from 
+// user. The password must qualify these requirements:
+// a. It should contain alphabets and numbers
+// b. It should not start with a number
+// c. It must at least 6 characters long
+// If the password does not meet above requirements,
+// prompt the user to enter a valid password.
+// For character codes of a-z, A-Z & 0-9, refer to ASCII
+// table at the end of this document.
+
+var password = prompt("enter your password");
+document.write("entered password "+ password + "<br>");
+
+if (password.slice(0, 1) <= 1000000) {
+    document.write("Password cannot start with the numbers " + "<br>");
+    document.write("plz enter a valid password" + "<br>" + "<br>");
+}
+else if (password.length <= 6) {
+    document.write("Password length cannot be less tha 6 character");
+    document.write("plz enter a valid password");
+}
+for (var i = 0; i < password.length; i++) {
+    switch (apo) {
+        case "!":
+            document.write("Password should not contain special characters" + "<br>");
+            document.write("plz enter a valid password" + "<br>" + "<br>");
+            break;
+
+        case "@":
+            document.write("Password should not contain special characters" + "<br>");
+            document.write("plz enter a valid password" + "<br>" + "<br>");
+            break;
+
+        case "#":
+            document.write("Password should not contain special characters" + "<br>");
+            document.write("plz enter a valid password" + "<br>");
+            break;
+
+        case "$":
+            document.write("Password should not contain special characters" + "<br>");
+            document.write("plz enter a valid password" + "<br>");
+            break;
+
+        case "%":
+            document.write("Password should not contain special characters" + "<br>");
+            document.write("plz enter a valid password" + "<br>");
+            break;
+
+        case "^":
+            document.write("Password should not contain special characters" + "<br>");
+            document.write("plz enter a valid password" + "<br>");
+            break;
+
+        case "&":
+            document.write("Password should not contain special characters" + "<br>");
+            document.write("plz enter a valid password" + "<br>");
+            break;
+
+        case "*":
+            document.write("Password should not contain special characters" + "<br>");
+            document.write("plz enter a valid password" + "<br>");
+            break;
+
+        case "=":
+            document.write("Password should not contain special characters" + "<br>");
+            document.write("plz enter a valid password" + "<br>");
+            break;
+
+        case "+":
+            document.write("Password should not contain special characters" + "<br>");
+            document.write("plz enter a valid password" + "<br>");
+            break;
+    }
+}
+
+
+// 16. Write a program to convert the following string to an 
+// array using string split method.
+// var university = “University of Karachi”;
+// Display the elements of array in your browser.
+
+var university = "University of Karachi";
+university = university.split("");
+for (i = 0; i < university.length; i++) {
+    document.write(university[i] + "<br>");
+}
+
+
+
+// 17. Write a program to display the last character of a user 
+// input.
+var Character = prompt("Enter input character");
+document.write("User Input :" + Character + "<br>");
+document.write("Last Character of Input :" + Character.substr(-1) + "<br>");
+
+
+
+// 18. You have a string “The quick brown fox jumps over the 
+// lazy dog”. Write a program to count number of 
+// occurrences of word “the” in given string.
+var Countnumber = "The quick brown fox jumps over the lazy dog";
+document.write(Countnumber + '<br>');
+var Countnumber1 = Countnumber.toLowerCase();
+var countnumber2 = (Countnumber1.match(/the/g)).length;
+document.write(countnumber2)
+
+
